@@ -3,6 +3,6 @@
 <% @charities.each do |charity|%><br>
 <%= link_to charity.name, charity_path(charity)%><br>
 <%= link_to '<button type="button">Like</button>'.html_safe, new_donation_path %><br>
-<%= link_to '<button type="button">Donate</button>'.html_safe, new_donation_path %>
+
 <%end%>
 <ul>
