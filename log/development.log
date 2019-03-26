@@ -31479,3 +31479,111 @@ Processing by UserRewardsController#show as HTML
 Completed 200 OK in 300ms (Views: 264.1ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:33:34 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.3ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 298ms (Views: 261.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:33:47 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.3ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 52.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:34:13 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.4ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 57ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:35:10 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.2ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 43.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:35:41 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.5ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 76ms (Views: 68.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:36:00 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.2ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 67ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:37:11 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.5ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/flatironschool/Desktop/coding/Module_2_project/Module2Project/app/views/user_rewards/show.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tton_to "new" new_donation_path, class: "btn btn-info btn-lg...
+...                               ^):
+  
+app/views/user_rewards/show.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:37:41 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.3ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 51.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:38:06 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.2ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/user_rewards/1" for ::1 at 2019-03-26 17:41:05 -0500
+Processing by UserRewardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserReward Load (0.2ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_rewards_controller.rb:8
+  Rendering user_rewards/show.html.erb within layouts/application
+  Rendered user_rewards/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 59ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+
+
