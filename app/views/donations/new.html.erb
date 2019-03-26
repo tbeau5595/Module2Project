@@ -1,0 +1,12 @@
+<%= form_with model: @donation do |f|%>
+    <%= f.label :user %>
+    <%= f.collection_select(:user_id, User.all, :id, :name) %>
+    <br>
+    <%= f.label :charity %>
+    <%= f.collection_select(:charity_id, Charity.all, :id, :name) %>
+    <br>
+    <%= f.label :amount %>
+    <%= f.number_field :amount %>
+    <br>
+    <%= f.submit "Donate!"%>
+<% end %>

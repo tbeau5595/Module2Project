@@ -1,0 +1,6 @@
+<h1><%= @user.name %></h1>
+<h3><%= @user.reward.level %></h3>
+
+<% @user.donations.each do |donation|%>
+<%= "#{donation.charity.name} " "$#{donation.amount}"%><br>
+<% end %>
