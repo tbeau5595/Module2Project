@@ -5,7 +5,16 @@ class UserRewardsController < ApplicationController
     end
 
     def show
-        @user_reward = UserReward.find_by(user_id: @user.id)
+        @user_reward = UserReward.find(params[:id])
+        if @user_reward.reward_id == 1
+            @reward = "None Yet!"
+        elsif @user_reward.reward_id == 2
+            @reward = "$5 gift card"
+        elsif @user_reward.reward_id == 3
+            @reward = "$20 gift card"
+        elsif @user_reward.reward_id == 4
+            @reward = "$50 gift card"
+        end
     end
 
     def new
