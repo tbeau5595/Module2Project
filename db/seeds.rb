@@ -13,7 +13,7 @@ Reward.destroy_all
 UserReward.destroy_all
 
 
-30.times do 
+100.times do 
     User.create(
     name: Faker::Name.unique.name,
     account_number: Faker::Bank.unique.account_number

@@ -8952,3 +8952,223 @@ app/controllers/users_controller.rb:9:in `show'
   ↳ db/seeds.rb:45
   [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
   ↳ db/seeds.rb:45
+Started GET "/" for ::1 at 2019-03-26 15:12:44 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (6.7ms)
+Completed 200 OK in 37ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 15:12:47 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 728ms (Views: 695.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 15:14:09 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 103ms (Views: 96.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-26 15:14:15 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:3
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:6
+  Rendered donations/new.html.erb within layouts/application (1883.4ms)
+Completed 200 OK in 2026ms (Views: 1973.6ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/donations" for ::1 at 2019-03-26 15:14:22 -0500
+Processing by DonationsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ifN2ccws78ipexrVCaFtJJF9V1QTicWVeXIaJ6TYyrZL7ETuIHc2cRDnr0XKQX6NwFIpmwkwKWj3tVhstALIfA==", "donation"=>{"user_id"=>"9", "charity_id"=>"11", "amount"=>"1"}, "commit"=>"Donate!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mDonation Create (3.9ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 11], ["amount", 1], ["created_at", "2019-03-26 20:14:22.615382"], ["updated_at", "2019-03-26 20:14:22.615382"]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+Redirected to http://localhost:3000/users
+Completed 200 OK in 62ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/users" for ::1 at 2019-03-26 15:14:22 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 155ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 15:14:32 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 100ms (Views: 88.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/charities/11" for ::1 at 2019-03-26 15:14:33 -0500
+Processing by CharitiesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/charities_controller.rb:7
+  Rendering charities/show.html.erb within layouts/application
+  Rendered charities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 144ms (Views: 133.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-26 15:14:34 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:3
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:6
+  Rendered donations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 116ms (Views: 105.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 15:23:11 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 640ms (Views: 611.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-26 15:23:17 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:3
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:6
+  Rendered donations/new.html.erb within layouts/application (545.6ms)
+Completed 200 OK in 656ms (Views: 607.6ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/donations" for ::1 at 2019-03-26 15:23:25 -0500
+Processing by DonationsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+si1PJq8inBVen4QtoX7sEPQsZishdNfUq3bvhn1DWs414ejdudTyezmy4B1ZegZEv/PV7Y8P6Lcapn1CS8PoQ==", "donation"=>{"user_id"=>"9", "charity_id"=>"14", "amount"=>"4"}, "commit"=>"Donate!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mDonation Create (2.1ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 14], ["amount", 4], ["created_at", "2019-03-26 20:23:25.836891"], ["updated_at", "2019-03-26 20:23:25.836891"]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+Redirected to http://localhost:3000/users
+Completed 200 OK in 33ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/users" for ::1 at 2019-03-26 15:23:25 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 90ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 15:23:34 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 96ms (Views: 87.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 15:25:52 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 377ms (Views: 350.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/charities/12" for ::1 at 2019-03-26 15:25:57 -0500
+Processing by CharitiesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charities_controller.rb:7
+  Rendering charities/show.html.erb within layouts/application
+  Rendered charities/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 96ms (Views: 80.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-26 15:25:59 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:3
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:6
+  Rendered donations/new.html.erb within layouts/application (429.2ms)
+Completed 200 OK in 566ms (Views: 488.1ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/donations" for ::1 at 2019-03-26 15:26:12 -0500
+Processing by DonationsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NvbH5TlHiTjxHZeEYfiynj//WD4AVVB+OECHk7TZqo706fV61RxQgUiBIhSiGKE3btAm8RrsvIO2h8XYpAOoRA==", "donation"=>{"user_id"=>"9", "charity_id"=>"14", "amount"=>"8"}, "commit"=>"Donate!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mDonation Create (0.9ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 14], ["amount", 8], ["created_at", "2019-03-26 20:26:12.386348"], ["updated_at", "2019-03-26 20:26:12.386348"]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+Redirected to http://localhost:3000/users
+Completed 200 OK in 30ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/users" for ::1 at 2019-03-26 15:26:12 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 109ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-03-26 15:26:51 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (284.7ms)
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_charities_path' for #<#<Class:0x007ff340f14088>:0x007ff340f042a0>
+Did you mean?  new_charity_path):
+    1: <h1>Thank You For Donating!!<h1>
+    2: <h3> If you want to donate again click here</h3>
+    3: <%= link_to '<button type="button">charity</button>'.html_safe, new_charities_path %>
+  
+app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__3572106563300982954_70341371669080'
