@@ -1,5 +1,7 @@
 <h1><%= @user.name %></h1>
-<h3><%= @user.reward.level %></h3>
+<h3><%= "You are #{@user.reward.level} level!" %></h3>
+<%= link_to '<button type="button">Your Rewards</button>'.html_safe, user_rewards_path %>
+<br>
 
 <% @user.donations.each do |donation|%>
 <%= "#{donation.charity.name} " "$#{donation.amount}"%><br>
