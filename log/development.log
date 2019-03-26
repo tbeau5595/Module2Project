@@ -6338,3 +6338,2617 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 1130ms (Views: 867.5ms | ActiveRecord: 29.7ms)
 
 
+Started GET "/users/20" for ::1 at 2019-03-26 14:12:23 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Completed 404 Not Found in 38ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=20):
+  
+app/controllers/users_controller.rb:9:in `show'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDonation Load (0.3ms)[0m  [1m[34mSELECT "donations".* FROM "donations"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (1.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 26]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mReward Load (0.3ms)[0m  [1m[34mSELECT "rewards".* FROM "rewards"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUserReward Load (0.5ms)[0m  [1m[34mSELECT "user_rewards".* FROM "user_rewards"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name 1"], ["account_number", 1234567890], ["created_at", "2019-03-26 19:12:50.682008"], ["updated_at", "2019-03-26 19:12:50.682008"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name 2"], ["account_number", 1236547890], ["created_at", "2019-03-26 19:12:50.687182"], ["updated_at", "2019-03-26 19:12:50.687182"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name 3"], ["account_number", 1234569870], ["created_at", "2019-03-26 19:12:50.691526"], ["updated_at", "2019-03-26 19:12:50.691526"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name 4"], ["account_number", 3214567890], ["created_at", "2019-03-26 19:12:50.696663"], ["updated_at", "2019-03-26 19:12:50.696663"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charity 1"], ["description", "description"], ["created_at", "2019-03-26 19:12:50.709023"], ["updated_at", "2019-03-26 19:12:50.709023"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charity 2"], ["description", "description"], ["created_at", "2019-03-26 19:12:50.712572"], ["updated_at", "2019-03-26 19:12:50.712572"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charity 3"], ["description", "description"], ["created_at", "2019-03-26 19:12:50.716570"], ["updated_at", "2019-03-26 19:12:50.716570"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charity 4"], ["description", "description"], ["created_at", "2019-03-26 19:12:50.721144"], ["updated_at", "2019-03-26 19:12:50.721144"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[36mCharity Create (0.3ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charity 5"], ["description", "description"], ["created_at", "2019-03-26 19:12:50.726084"], ["updated_at", "2019-03-26 19:12:50.726084"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[36mReward Create (0.5ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "bronze"], ["created_at", "2019-03-26 19:12:50.730617"], ["updated_at", "2019-03-26 19:12:50.730617"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[36mReward Create (0.5ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "silver"], ["created_at", "2019-03-26 19:12:50.735397"], ["updated_at", "2019-03-26 19:12:50.735397"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[36mReward Create (0.6ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "gold"], ["created_at", "2019-03-26 19:12:50.740420"], ["updated_at", "2019-03-26 19:12:50.740420"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Create (0.6ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "platinum"], ["created_at", "2019-03-26 19:12:50.746224"], ["updated_at", "2019-03-26 19:12:50.746224"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:48
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:49
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:50
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:53
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:55
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:57
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:57
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:61
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:62
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:65
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:67
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:69
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:70
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:72
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:72
+Started GET "/users/20" for ::1 at 2019-03-26 14:13:05 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Completed 404 Not Found in 34ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=20):
+  
+app/controllers/users_controller.rb:9:in `show'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDonation Load (0.2ms)[0m  [1m[34mSELECT "donations".* FROM "donations"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT "rewards".* FROM "rewards"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.6ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUserReward Load (0.3ms)[0m  [1m[34mSELECT "user_rewards".* FROM "user_rewards"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Landon Turcotte"], ["account_number", 7755380785], ["created_at", "2019-03-26 20:04:20.268818"], ["updated_at", "2019-03-26 20:04:20.268818"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mayme Zemlak"], ["account_number", 4642994655], ["created_at", "2019-03-26 20:04:20.272839"], ["updated_at", "2019-03-26 20:04:20.272839"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mikel Hickle"], ["account_number", 4190787062], ["created_at", "2019-03-26 20:04:20.276820"], ["updated_at", "2019-03-26 20:04:20.276820"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dana Paucek"], ["account_number", 6927087375], ["created_at", "2019-03-26 20:04:20.285575"], ["updated_at", "2019-03-26 20:04:20.285575"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Raven Gerlach"], ["account_number", 9489727114], ["created_at", "2019-03-26 20:04:20.289538"], ["updated_at", "2019-03-26 20:04:20.289538"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Harriette Lebsack"], ["account_number", 2711479087], ["created_at", "2019-03-26 20:04:20.293656"], ["updated_at", "2019-03-26 20:04:20.293656"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Emogene Emmerich"], ["account_number", 7001194550], ["created_at", "2019-03-26 20:04:20.297785"], ["updated_at", "2019-03-26 20:04:20.297785"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Veola Marvin"], ["account_number", 7776684849], ["created_at", "2019-03-26 20:04:20.302429"], ["updated_at", "2019-03-26 20:04:20.302429"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Caren Rowe"], ["account_number", 8017137283], ["created_at", "2019-03-26 20:04:20.307272"], ["updated_at", "2019-03-26 20:04:20.307272"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rosemary Rosenbaum Jr."], ["account_number", 646843708], ["created_at", "2019-03-26 20:04:20.312903"], ["updated_at", "2019-03-26 20:04:20.312903"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Perry Sporer"], ["account_number", 4779461817], ["created_at", "2019-03-26 20:04:20.317783"], ["updated_at", "2019-03-26 20:04:20.317783"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jarod Von IV"], ["account_number", 7820048906], ["created_at", "2019-03-26 20:04:20.322088"], ["updated_at", "2019-03-26 20:04:20.322088"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ms. Leilani Orn"], ["account_number", 5259947154], ["created_at", "2019-03-26 20:04:20.326119"], ["updated_at", "2019-03-26 20:04:20.326119"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kenny Batz"], ["account_number", 76562105], ["created_at", "2019-03-26 20:04:20.329733"], ["updated_at", "2019-03-26 20:04:20.329733"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Keila Auer"], ["account_number", 7014165095], ["created_at", "2019-03-26 20:04:20.333406"], ["updated_at", "2019-03-26 20:04:20.333406"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Darell Homenick"], ["account_number", 5896839081], ["created_at", "2019-03-26 20:04:20.337383"], ["updated_at", "2019-03-26 20:04:20.337383"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jacques Reichert"], ["account_number", 9698529280], ["created_at", "2019-03-26 20:04:20.341533"], ["updated_at", "2019-03-26 20:04:20.341533"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rozanne Weber"], ["account_number", 3327206360], ["created_at", "2019-03-26 20:04:20.345496"], ["updated_at", "2019-03-26 20:04:20.345496"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Floyd Macejkovic"], ["account_number", 3023662724], ["created_at", "2019-03-26 20:04:20.349613"], ["updated_at", "2019-03-26 20:04:20.349613"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Coleman Lowe"], ["account_number", 6363623631], ["created_at", "2019-03-26 20:04:20.353745"], ["updated_at", "2019-03-26 20:04:20.353745"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. Rory Little"], ["account_number", 5089055403], ["created_at", "2019-03-26 20:04:20.358179"], ["updated_at", "2019-03-26 20:04:20.358179"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hannah Feeney III"], ["account_number", 7090052986], ["created_at", "2019-03-26 20:04:20.362200"], ["updated_at", "2019-03-26 20:04:20.362200"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Nida Thompson"], ["account_number", 1671861269], ["created_at", "2019-03-26 20:04:20.366832"], ["updated_at", "2019-03-26 20:04:20.366832"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Stefan Lakin"], ["account_number", 566919572], ["created_at", "2019-03-26 20:04:20.371132"], ["updated_at", "2019-03-26 20:04:20.371132"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Manuel Bartoletti"], ["account_number", 9438484631], ["created_at", "2019-03-26 20:04:20.375421"], ["updated_at", "2019-03-26 20:04:20.375421"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carlos Gutkowski"], ["account_number", 6481810467], ["created_at", "2019-03-26 20:04:20.379478"], ["updated_at", "2019-03-26 20:04:20.379478"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Regenia Schiller"], ["account_number", 1022295159], ["created_at", "2019-03-26 20:04:20.386106"], ["updated_at", "2019-03-26 20:04:20.386106"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jaqueline Wisoky"], ["account_number", 2805914155], ["created_at", "2019-03-26 20:04:20.390423"], ["updated_at", "2019-03-26 20:04:20.390423"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mrs. Terrance Bosco"], ["account_number", 374270458], ["created_at", "2019-03-26 20:04:20.394421"], ["updated_at", "2019-03-26 20:04:20.394421"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "account_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mark Thiel II"], ["account_number", 5779183063], ["created_at", "2019-03-26 20:04:20.398638"], ["updated_at", "2019-03-26 20:04:20.398638"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Keebler-Waelchi"], ["description", "Banking"], ["created_at", "2019-03-26 20:04:20.403527"], ["updated_at", "2019-03-26 20:04:20.403527"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rodriguez Inc"], ["description", "Glass, Ceramics & Concrete"], ["created_at", "2019-03-26 20:04:20.408001"], ["updated_at", "2019-03-26 20:04:20.408001"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doyle LLC"], ["description", "Banking"], ["created_at", "2019-03-26 20:04:20.412337"], ["updated_at", "2019-03-26 20:04:20.412337"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Beier, Bednar and Deckow"], ["description", "Mechanical or Industrial Engineering"], ["created_at", "2019-03-26 20:04:20.417364"], ["updated_at", "2019-03-26 20:04:20.417364"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Smitham Group"], ["description", "Hospital & Health Care"], ["created_at", "2019-03-26 20:04:20.421580"], ["updated_at", "2019-03-26 20:04:20.421580"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ferry-Corkery"], ["description", "Graphic Design"], ["created_at", "2019-03-26 20:04:20.426412"], ["updated_at", "2019-03-26 20:04:20.426412"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Macejkovic and Sons"], ["description", "Civic & Social Organization"], ["created_at", "2019-03-26 20:04:20.430568"], ["updated_at", "2019-03-26 20:04:20.430568"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cassin and Sons"], ["description", "Government Relations"], ["created_at", "2019-03-26 20:04:20.435261"], ["updated_at", "2019-03-26 20:04:20.435261"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Schiller, Gleason and Dach"], ["description", "International Affairs"], ["created_at", "2019-03-26 20:04:20.439298"], ["updated_at", "2019-03-26 20:04:20.439298"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kassulke, Crooks and Wisozk"], ["description", "Defense & Space"], ["created_at", "2019-03-26 20:04:20.443504"], ["updated_at", "2019-03-26 20:04:20.443504"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 36], ["charity_id", 13], ["amount", 99], ["created_at", "2019-03-26 20:04:20.464117"], ["updated_at", "2019-03-26 20:04:20.464117"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 37], ["charity_id", 20], ["amount", 3], ["created_at", "2019-03-26 20:04:20.470589"], ["updated_at", "2019-03-26 20:04:20.470589"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.6ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 35], ["charity_id", 18], ["amount", 21], ["created_at", "2019-03-26 20:04:20.478236"], ["updated_at", "2019-03-26 20:04:20.478236"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.7ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 10], ["charity_id", 11], ["amount", 55], ["created_at", "2019-03-26 20:04:20.489496"], ["updated_at", "2019-03-26 20:04:20.489496"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["charity_id", 13], ["amount", 81], ["created_at", "2019-03-26 20:04:20.496373"], ["updated_at", "2019-03-26 20:04:20.496373"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 38], ["charity_id", 20], ["amount", 80], ["created_at", "2019-03-26 20:04:20.504734"], ["updated_at", "2019-03-26 20:04:20.504734"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["charity_id", 12], ["amount", 2], ["created_at", "2019-03-26 20:04:20.511999"], ["updated_at", "2019-03-26 20:04:20.511999"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 34], ["charity_id", 16], ["amount", 77], ["created_at", "2019-03-26 20:04:20.521034"], ["updated_at", "2019-03-26 20:04:20.521034"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 23], ["charity_id", 18], ["amount", 42], ["created_at", "2019-03-26 20:04:20.527556"], ["updated_at", "2019-03-26 20:04:20.527556"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 35], ["charity_id", 20], ["amount", 80], ["created_at", "2019-03-26 20:04:20.535030"], ["updated_at", "2019-03-26 20:04:20.535030"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["charity_id", 19], ["amount", 8], ["created_at", "2019-03-26 20:04:20.542448"], ["updated_at", "2019-03-26 20:04:20.542448"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 36], ["charity_id", 20], ["amount", 37], ["created_at", "2019-03-26 20:04:20.551228"], ["updated_at", "2019-03-26 20:04:20.551228"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 11], ["charity_id", 11], ["amount", 34], ["created_at", "2019-03-26 20:04:20.559662"], ["updated_at", "2019-03-26 20:04:20.559662"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 17], ["charity_id", 14], ["amount", 90], ["created_at", "2019-03-26 20:04:20.566807"], ["updated_at", "2019-03-26 20:04:20.566807"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 37], ["charity_id", 20], ["amount", 76], ["created_at", "2019-03-26 20:04:20.574371"], ["updated_at", "2019-03-26 20:04:20.574371"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 27], ["charity_id", 17], ["amount", 6], ["created_at", "2019-03-26 20:04:20.584946"], ["updated_at", "2019-03-26 20:04:20.584946"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 35], ["charity_id", 15], ["amount", 88], ["created_at", "2019-03-26 20:04:20.592713"], ["updated_at", "2019-03-26 20:04:20.592713"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 20], ["amount", 82], ["created_at", "2019-03-26 20:04:20.599194"], ["updated_at", "2019-03-26 20:04:20.599194"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 22], ["charity_id", 13], ["amount", 12], ["created_at", "2019-03-26 20:04:20.606567"], ["updated_at", "2019-03-26 20:04:20.606567"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 34], ["charity_id", 13], ["amount", 39], ["created_at", "2019-03-26 20:04:20.615520"], ["updated_at", "2019-03-26 20:04:20.615520"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 16], ["charity_id", 11], ["amount", 99], ["created_at", "2019-03-26 20:04:20.623638"], ["updated_at", "2019-03-26 20:04:20.623638"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 33], ["charity_id", 11], ["amount", 97], ["created_at", "2019-03-26 20:04:20.631114"], ["updated_at", "2019-03-26 20:04:20.631114"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 34], ["charity_id", 15], ["amount", 84], ["created_at", "2019-03-26 20:04:20.637777"], ["updated_at", "2019-03-26 20:04:20.637777"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["charity_id", 18], ["amount", 37], ["created_at", "2019-03-26 20:04:20.644810"], ["updated_at", "2019-03-26 20:04:20.644810"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 27], ["charity_id", 14], ["amount", 17], ["created_at", "2019-03-26 20:04:20.652667"], ["updated_at", "2019-03-26 20:04:20.652667"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 26], ["charity_id", 15], ["amount", 6], ["created_at", "2019-03-26 20:04:20.659796"], ["updated_at", "2019-03-26 20:04:20.659796"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 11], ["charity_id", 14], ["amount", 100], ["created_at", "2019-03-26 20:04:20.666612"], ["updated_at", "2019-03-26 20:04:20.666612"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 29], ["charity_id", 18], ["amount", 74], ["created_at", "2019-03-26 20:04:20.673506"], ["updated_at", "2019-03-26 20:04:20.673506"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 32], ["charity_id", 14], ["amount", 26], ["created_at", "2019-03-26 20:04:20.680671"], ["updated_at", "2019-03-26 20:04:20.680671"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 19], ["charity_id", 19], ["amount", 59], ["created_at", "2019-03-26 20:04:20.689745"], ["updated_at", "2019-03-26 20:04:20.689745"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 18], ["charity_id", 17], ["amount", 25], ["created_at", "2019-03-26 20:04:20.696981"], ["updated_at", "2019-03-26 20:04:20.696981"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 21], ["charity_id", 18], ["amount", 43], ["created_at", "2019-03-26 20:04:20.704056"], ["updated_at", "2019-03-26 20:04:20.704056"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 33], ["charity_id", 14], ["amount", 56], ["created_at", "2019-03-26 20:04:20.710558"], ["updated_at", "2019-03-26 20:04:20.710558"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["charity_id", 18], ["amount", 23], ["created_at", "2019-03-26 20:04:20.717410"], ["updated_at", "2019-03-26 20:04:20.717410"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 36], ["charity_id", 20], ["amount", 67], ["created_at", "2019-03-26 20:04:20.724104"], ["updated_at", "2019-03-26 20:04:20.724104"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 34], ["charity_id", 13], ["amount", 67], ["created_at", "2019-03-26 20:04:20.731994"], ["updated_at", "2019-03-26 20:04:20.731994"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["charity_id", 15], ["amount", 82], ["created_at", "2019-03-26 20:04:20.739398"], ["updated_at", "2019-03-26 20:04:20.739398"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["charity_id", 11], ["amount", 28], ["created_at", "2019-03-26 20:04:20.748046"], ["updated_at", "2019-03-26 20:04:20.748046"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 37], ["charity_id", 17], ["amount", 76], ["created_at", "2019-03-26 20:04:20.755717"], ["updated_at", "2019-03-26 20:04:20.755717"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 33], ["charity_id", 17], ["amount", 25], ["created_at", "2019-03-26 20:04:20.764610"], ["updated_at", "2019-03-26 20:04:20.764610"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 38], ["charity_id", 16], ["amount", 37], ["created_at", "2019-03-26 20:04:20.773599"], ["updated_at", "2019-03-26 20:04:20.773599"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 27], ["charity_id", 19], ["amount", 21], ["created_at", "2019-03-26 20:04:20.781550"], ["updated_at", "2019-03-26 20:04:20.781550"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 32], ["charity_id", 16], ["amount", 46], ["created_at", "2019-03-26 20:04:20.792015"], ["updated_at", "2019-03-26 20:04:20.792015"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["charity_id", 12], ["amount", 36], ["created_at", "2019-03-26 20:04:20.799559"], ["updated_at", "2019-03-26 20:04:20.799559"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 20], ["charity_id", 17], ["amount", 73], ["created_at", "2019-03-26 20:04:20.815791"], ["updated_at", "2019-03-26 20:04:20.815791"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.6ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 25], ["charity_id", 19], ["amount", 57], ["created_at", "2019-03-26 20:04:20.823581"], ["updated_at", "2019-03-26 20:04:20.823581"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.6ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 31], ["charity_id", 13], ["amount", 4], ["created_at", "2019-03-26 20:04:20.831618"], ["updated_at", "2019-03-26 20:04:20.831618"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.7ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 13], ["charity_id", 14], ["amount", 66], ["created_at", "2019-03-26 20:04:20.842187"], ["updated_at", "2019-03-26 20:04:20.842187"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.7ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["charity_id", 15], ["amount", 71], ["created_at", "2019-03-26 20:04:20.851757"], ["updated_at", "2019-03-26 20:04:20.851757"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.6ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 31], ["charity_id", 19], ["amount", 52], ["created_at", "2019-03-26 20:04:20.863397"], ["updated_at", "2019-03-26 20:04:20.863397"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.8ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["charity_id", 15], ["amount", 34], ["created_at", "2019-03-26 20:04:20.872165"], ["updated_at", "2019-03-26 20:04:20.872165"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.7ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 38], ["charity_id", 15], ["amount", 75], ["created_at", "2019-03-26 20:04:20.883471"], ["updated_at", "2019-03-26 20:04:20.883471"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (1.0ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 24], ["charity_id", 20], ["amount", 34], ["created_at", "2019-03-26 20:04:20.902704"], ["updated_at", "2019-03-26 20:04:20.902704"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (1.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 27], ["charity_id", 19], ["amount", 18], ["created_at", "2019-03-26 20:04:20.914854"], ["updated_at", "2019-03-26 20:04:20.914854"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.6ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 19], ["charity_id", 14], ["amount", 58], ["created_at", "2019-03-26 20:04:20.929247"], ["updated_at", "2019-03-26 20:04:20.929247"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.6ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 38], ["charity_id", 16], ["amount", 98], ["created_at", "2019-03-26 20:04:20.938996"], ["updated_at", "2019-03-26 20:04:20.938996"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 36], ["charity_id", 20], ["amount", 72], ["created_at", "2019-03-26 20:04:20.947860"], ["updated_at", "2019-03-26 20:04:20.947860"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 33], ["charity_id", 17], ["amount", 75], ["created_at", "2019-03-26 20:04:20.955696"], ["updated_at", "2019-03-26 20:04:20.955696"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 25], ["charity_id", 16], ["amount", 80], ["created_at", "2019-03-26 20:04:20.963967"], ["updated_at", "2019-03-26 20:04:20.963967"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 17], ["charity_id", 19], ["amount", 4], ["created_at", "2019-03-26 20:04:20.971885"], ["updated_at", "2019-03-26 20:04:20.971885"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 36], ["charity_id", 17], ["amount", 19], ["created_at", "2019-03-26 20:04:20.981351"], ["updated_at", "2019-03-26 20:04:20.981351"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 13], ["charity_id", 17], ["amount", 96], ["created_at", "2019-03-26 20:04:20.995249"], ["updated_at", "2019-03-26 20:04:20.995249"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 20], ["charity_id", 11], ["amount", 40], ["created_at", "2019-03-26 20:04:21.003755"], ["updated_at", "2019-03-26 20:04:21.003755"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 34], ["charity_id", 13], ["amount", 23], ["created_at", "2019-03-26 20:04:21.013134"], ["updated_at", "2019-03-26 20:04:21.013134"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 37], ["charity_id", 13], ["amount", 8], ["created_at", "2019-03-26 20:04:21.021088"], ["updated_at", "2019-03-26 20:04:21.021088"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 22], ["charity_id", 16], ["amount", 41], ["created_at", "2019-03-26 20:04:21.029633"], ["updated_at", "2019-03-26 20:04:21.029633"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 38], ["charity_id", 17], ["amount", 25], ["created_at", "2019-03-26 20:04:21.037674"], ["updated_at", "2019-03-26 20:04:21.037674"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 21], ["charity_id", 14], ["amount", 80], ["created_at", "2019-03-26 20:04:21.046130"], ["updated_at", "2019-03-26 20:04:21.046130"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 34], ["charity_id", 14], ["amount", 95], ["created_at", "2019-03-26 20:04:21.053862"], ["updated_at", "2019-03-26 20:04:21.053862"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 16], ["amount", 83], ["created_at", "2019-03-26 20:04:21.062913"], ["updated_at", "2019-03-26 20:04:21.062913"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 16], ["charity_id", 20], ["amount", 83], ["created_at", "2019-03-26 20:04:21.070628"], ["updated_at", "2019-03-26 20:04:21.070628"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 31], ["charity_id", 16], ["amount", 21], ["created_at", "2019-03-26 20:04:21.078303"], ["updated_at", "2019-03-26 20:04:21.078303"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.8ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["charity_id", 20], ["amount", 28], ["created_at", "2019-03-26 20:04:21.089334"], ["updated_at", "2019-03-26 20:04:21.089334"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 34], ["charity_id", 13], ["amount", 4], ["created_at", "2019-03-26 20:04:21.099163"], ["updated_at", "2019-03-26 20:04:21.099163"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 10], ["charity_id", 12], ["amount", 30], ["created_at", "2019-03-26 20:04:21.107318"], ["updated_at", "2019-03-26 20:04:21.107318"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 33], ["charity_id", 17], ["amount", 72], ["created_at", "2019-03-26 20:04:21.114483"], ["updated_at", "2019-03-26 20:04:21.114483"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["charity_id", 12], ["amount", 90], ["created_at", "2019-03-26 20:04:21.121678"], ["updated_at", "2019-03-26 20:04:21.121678"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["charity_id", 19], ["amount", 54], ["created_at", "2019-03-26 20:04:21.129122"], ["updated_at", "2019-03-26 20:04:21.129122"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.7ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 20], ["charity_id", 11], ["amount", 88], ["created_at", "2019-03-26 20:04:21.137010"], ["updated_at", "2019-03-26 20:04:21.137010"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 21], ["charity_id", 19], ["amount", 80], ["created_at", "2019-03-26 20:04:21.144321"], ["updated_at", "2019-03-26 20:04:21.144321"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.7ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 21], ["charity_id", 18], ["amount", 6], ["created_at", "2019-03-26 20:04:21.150796"], ["updated_at", "2019-03-26 20:04:21.150796"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 24], ["charity_id", 16], ["amount", 60], ["created_at", "2019-03-26 20:04:21.159148"], ["updated_at", "2019-03-26 20:04:21.159148"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 16], ["amount", 75], ["created_at", "2019-03-26 20:04:21.166298"], ["updated_at", "2019-03-26 20:04:21.166298"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 38], ["charity_id", 11], ["amount", 76], ["created_at", "2019-03-26 20:04:21.174104"], ["updated_at", "2019-03-26 20:04:21.174104"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 17], ["amount", 88], ["created_at", "2019-03-26 20:04:21.180423"], ["updated_at", "2019-03-26 20:04:21.180423"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 18], ["charity_id", 11], ["amount", 9], ["created_at", "2019-03-26 20:04:21.191279"], ["updated_at", "2019-03-26 20:04:21.191279"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 22], ["charity_id", 14], ["amount", 22], ["created_at", "2019-03-26 20:04:21.198427"], ["updated_at", "2019-03-26 20:04:21.198427"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["charity_id", 15], ["amount", 60], ["created_at", "2019-03-26 20:04:21.205610"], ["updated_at", "2019-03-26 20:04:21.205610"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["charity_id", 11], ["amount", 69], ["created_at", "2019-03-26 20:04:21.212348"], ["updated_at", "2019-03-26 20:04:21.212348"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 24], ["charity_id", 18], ["amount", 30], ["created_at", "2019-03-26 20:04:21.218829"], ["updated_at", "2019-03-26 20:04:21.218829"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 16], ["charity_id", 17], ["amount", 27], ["created_at", "2019-03-26 20:04:21.225469"], ["updated_at", "2019-03-26 20:04:21.225469"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.0ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 36], ["charity_id", 13], ["amount", 60], ["created_at", "2019-03-26 20:04:21.232400"], ["updated_at", "2019-03-26 20:04:21.232400"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.6ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 23], ["charity_id", 20], ["amount", 57], ["created_at", "2019-03-26 20:04:21.240575"], ["updated_at", "2019-03-26 20:04:21.240575"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 31], ["charity_id", 13], ["amount", 89], ["created_at", "2019-03-26 20:04:21.249507"], ["updated_at", "2019-03-26 20:04:21.249507"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 19], ["charity_id", 14], ["amount", 40], ["created_at", "2019-03-26 20:04:21.258020"], ["updated_at", "2019-03-26 20:04:21.258020"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 22], ["charity_id", 13], ["amount", 16], ["created_at", "2019-03-26 20:04:21.265399"], ["updated_at", "2019-03-26 20:04:21.265399"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["charity_id", 16], ["amount", 98], ["created_at", "2019-03-26 20:04:21.274048"], ["updated_at", "2019-03-26 20:04:21.274048"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.5ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 26], ["charity_id", 11], ["amount", 98], ["created_at", "2019-03-26 20:04:21.281004"], ["updated_at", "2019-03-26 20:04:21.281004"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["charity_id", 17], ["amount", 99], ["created_at", "2019-03-26 20:04:21.296281"], ["updated_at", "2019-03-26 20:04:21.296281"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mDonation Create (0.4ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 17], ["charity_id", 12], ["amount", 41], ["created_at", "2019-03-26 20:04:21.303160"], ["updated_at", "2019-03-26 20:04:21.303160"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mReward Create (1.0ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "Bronze"], ["created_at", "2019-03-26 20:04:21.308451"], ["updated_at", "2019-03-26 20:04:21.308451"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mReward Create (0.4ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "Silver"], ["created_at", "2019-03-26 20:04:21.316120"], ["updated_at", "2019-03-26 20:04:21.316120"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[36mReward Create (0.5ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "Gold"], ["created_at", "2019-03-26 20:04:21.320374"], ["updated_at", "2019-03-26 20:04:21.320374"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mReward Create (0.9ms)[0m  [1m[32mINSERT INTO "rewards" ("level", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["level", "Platinum"], ["created_at", "2019-03-26 20:04:21.325479"], ["updated_at", "2019-03-26 20:04:21.325479"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 9], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.347718"], ["updated_at", "2019-03-26 20:04:21.347718"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.3ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (1.0ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 10], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.355260"], ["updated_at", "2019-03-26 20:04:21.355260"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.4ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 11], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.364260"], ["updated_at", "2019-03-26 20:04:21.364260"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 12], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.369440"], ["updated_at", "2019-03-26 20:04:21.369440"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.6ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 13], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.376268"], ["updated_at", "2019-03-26 20:04:21.376268"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 14], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.383801"], ["updated_at", "2019-03-26 20:04:21.383801"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.9ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 15], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.392670"], ["updated_at", "2019-03-26 20:04:21.392670"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.9ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 16], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.400705"], ["updated_at", "2019-03-26 20:04:21.400705"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (1.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 17], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.409061"], ["updated_at", "2019-03-26 20:04:21.409061"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.7ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 18], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.417700"], ["updated_at", "2019-03-26 20:04:21.417700"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 19], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.424633"], ["updated_at", "2019-03-26 20:04:21.424633"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.6ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 20], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.429380"], ["updated_at", "2019-03-26 20:04:21.429380"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 21], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.435767"], ["updated_at", "2019-03-26 20:04:21.435767"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 22], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.443588"], ["updated_at", "2019-03-26 20:04:21.443588"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.7ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 23], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.449358"], ["updated_at", "2019-03-26 20:04:21.449358"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.3ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 24], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.461749"], ["updated_at", "2019-03-26 20:04:21.461749"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 25], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.468488"], ["updated_at", "2019-03-26 20:04:21.468488"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.6ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 26], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.474898"], ["updated_at", "2019-03-26 20:04:21.474898"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 27], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.480741"], ["updated_at", "2019-03-26 20:04:21.480741"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.8ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 28], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.490773"], ["updated_at", "2019-03-26 20:04:21.490773"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (1.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 29], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.498406"], ["updated_at", "2019-03-26 20:04:21.498406"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.7ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 30], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.505373"], ["updated_at", "2019-03-26 20:04:21.505373"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.4ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 31], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.512794"], ["updated_at", "2019-03-26 20:04:21.512794"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 32], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.518102"], ["updated_at", "2019-03-26 20:04:21.518102"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.1ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.4ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 33], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.524433"], ["updated_at", "2019-03-26 20:04:21.524433"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.6ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 34], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.532329"], ["updated_at", "2019-03-26 20:04:21.532329"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.9ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 35], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.541211"], ["updated_at", "2019-03-26 20:04:21.541211"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 36], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.549519"], ["updated_at", "2019-03-26 20:04:21.549519"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 37], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.556864"], ["updated_at", "2019-03-26 20:04:21.556864"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mReward Load (0.2ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."level" = ? LIMIT ?[0m  [["level", "Bronze"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUserReward Create (0.5ms)[0m  [1m[32mINSERT INTO "user_rewards" ("user_id", "reward_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 38], ["reward_id", 9], ["created_at", "2019-03-26 20:04:21.562862"], ["updated_at", "2019-03-26 20:04:21.562862"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
