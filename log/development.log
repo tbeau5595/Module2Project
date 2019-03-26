@@ -21153,3 +21153,101 @@ Processing by UserRewardsController#show as HTML
 Completed 200 OK in 581ms (Views: 535.6ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/users" for ::1 at 2019-03-26 17:03:56 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 278ms (Views: 262.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2019-03-26 17:04:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUserReward Load (0.4ms)[0m  [1m[34mSELECT  "user_rewards".* FROM "user_rewards" WHERE "user_rewards"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mDonation Load (0.6ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mReward Load (0.3ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" WHERE "rewards"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:17
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mReward Load (0.3ms)[0m  [1m[34mSELECT  "rewards".* FROM "rewards" INNER JOIN "user_rewards" ON "rewards"."id" = "user_rewards"."reward_id" WHERE "user_rewards"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 182ms (Views: 71.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 17:04:23 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (4.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 134ms (Views: 123.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/charities/1" for ::1 at 2019-03-26 17:04:30 -0500
+Processing by CharitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/charities_controller.rb:7
+  Rendering charities/show.html.erb within layouts/application
+  Rendered charities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 52.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-26 17:04:42 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:3
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:6
+  Rendered donations/new.html.erb within layouts/application (224.8ms)
+Completed 200 OK in 307ms (Views: 295.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/donations" for ::1 at 2019-03-26 17:04:51 -0500
+Processing by DonationsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OPd65On2RvOT+2+yQzOURxky7bvkfKnB22bcIfBN+QmqsUpk7nNBnBKM3zZ89UhZ+fmIbS1Yb2pdm0Ahe0Ictg==", "donation"=>{"user_id"=>"1", "charity_id"=>"1", "amount"=>"1231"}, "commit"=>"Donate!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mCharity Load (0.1ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mDonation Create (0.9ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["charity_id", 1], ["amount", 1231], ["created_at", "2019-03-26 22:04:51.181824"], ["updated_at", "2019-03-26 22:04:51.181824"]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+Redirected to http://localhost:3000/users
+Completed 200 OK in 12ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/users" for ::1 at 2019-03-26 17:04:51 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 66ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-26 17:04:55 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:3
+  Rendered charities/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 66ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
