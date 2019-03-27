@@ -1,5 +1,10 @@
 <h1>Your Rewards</h1>
 
+<% if @user_reward.used == true || @gift_card == "None yet!"%>
+<h3>No rewards right now</h3>
+<% else %>
 <h3><%= @gift_card %></h3>
+<% end %>
+
 <%= button_to "Use Reward", reward_path, class: "btn btn-info btn-sm" %>
 

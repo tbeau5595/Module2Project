@@ -31,7 +31,7 @@ end
     Donation.create(
     user_id: User.all.sample.id,
     charity_id: Charity.all.sample.id,
-    amount: Faker::Number.within(20..150),      
+    amount: Faker::Number.within(30..100),      
     )
 end
 
@@ -47,4 +47,4 @@ def create_user_reward
 end
 
 create_user_reward
-puts "Hello"
+puts "Seeded!"

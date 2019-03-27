@@ -3,7 +3,7 @@ class CreateRewards < ActiveRecord::Migration[5.2]
     create_table :rewards do |t|
       t.text :level
       t.text :gift_card
-      t.boolean :used, default: false
+
 
       t.timestamps
     end
