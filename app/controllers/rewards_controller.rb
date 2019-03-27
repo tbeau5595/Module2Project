@@ -20,7 +20,7 @@ class RewardsController < ApplicationController
     end
 
     def update
-
+        
     end
 
     def reward_params

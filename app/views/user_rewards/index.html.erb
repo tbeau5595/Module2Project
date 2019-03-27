@@ -1,5 +1,25 @@
-<h1></h1>
-
-<% @users.each do | user|%>
-<>
+<h1>Bronze donators</h1>
+<% @bronze_users.each do | bronze_user|%>
+<%= bronze_user.name %>
+<br>
+<% end %>
+<br>
+<h1>Silver donators</h1>
+<% @silver_users.each do | silver_user|%>
+<%= silver_user.name %>
+<br>
+<% end %>
+<br>
+<h1>Gold donators</h1>
+<% @gold_users.each do | gold_user|%>
+<%= gold_user.name %>
+<br>
+<% end %>
+<br>
+<h1>Platinum donators</h1>
+<% @platinum_users.each do | platinum_user|%>
+<%= platinum_user.name %>
+<br>
+<% end %>
+<br>
 

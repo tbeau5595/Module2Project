@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_03_25_150405) do
 
   create_table "rewards", force: :cascade do |t|
     t.text "level"
+    t.text "gift_card"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

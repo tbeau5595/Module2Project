@@ -1,20 +1,23 @@
 class UserRewardsController < ApplicationController
     
     def index
-
+        @bronze_users = UserReward.where(reward_id: 1).map do | bronze_user_reward |
+            User.find(bronze_user_reward.user_id)    
+        end
+        @silver_users = UserReward.where(reward_id: 2).map do | silver_user_reward |
+            User.find(silver_user_reward.user_id)             
+        end
+        @gold_users = UserReward.where(reward_id: 3).map do | gold_user_reward |
+            User.find(gold_user_reward.user_id)             
+        end
+        @platinum_users = UserReward.where(reward_id: 4).map do | platinum_user_reward |
+            User.find(platinum_user_reward.user_id)             
+        end
     end
 
     def show
         @user_reward = UserReward.find(params[:id])
-        if @user_reward.reward_id == 1
-            @reward = "None Yet!"
-        elsif @user_reward.reward_id == 2
-            @reward = "$5 gift card"
-        elsif @user_reward.reward_id == 3
-            @reward = "$20 gift card"
-        elsif @user_reward.reward_id == 4
-            @reward = "$50 gift card"
-        end
+        @gift_card = @user_reward.reward.gift_card
     end
 
     def new
