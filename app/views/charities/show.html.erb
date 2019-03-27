@@ -1,5 +1,4 @@
-<div>
-<%=@charity.name%>
-<%=@charity.description%>
-<%= link_to '<button type="button">Click to Donate</button>'.html_safe, new_donation_path %>
+<h1><%=@charity.name%></h1>
+<h3><%=@charity.description%></h3>
+<%= link_to "Click To Donate!", new_donation_path, class: "btn btn-primary btn-sm" %><br>
 </div>

@@ -9,19 +9,19 @@ class UsersController < ApplicationController
     def show
         @user = User.find(params[:id])
         @user_reward = UserReward.find_by(user_id: @user.id)
-        total = 0
+        @total = 0
         @user.donations.each do |donation|
-            total += donation.amount            
+            @total += donation.amount            
         end
-            if total < 100
+            if @total < 100
                 @user_reward.update(reward_id: 1)
-            elsif total < 250
+            elsif @total < 250
                 @user_reward.update(reward_id: 2)
-            elsif total < 500
+            elsif @total < 500
                 @user_reward.update(reward_id: 3)
-            elsif 500 <= total
+            elsif 500 <= @total
                 @user_reward.update(reward_id: 4)
-        end
+            end
     end
 
     def new

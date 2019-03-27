@@ -1,5 +1,24 @@
 <h1><%= @user.name %></h1>
-<h3><%= "You are #{@user.reward.level} level!" %></h3>
+<% if @user.reward.id == 4 %>
+    <h3>Congratulations! You are a Platinum level donor!</h3>
+<% else %>
+    <h3><%= "You are #{@user.reward.level} level!" %></h3>
+<% end %>
+<% if @user.reward.id == 1%>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: <%= @total%>%"aria-valuenow="<%= @total%>" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+<% elsif @user.reward.id == 2%>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: <%= @total/2.5 %>%" aria-valuenow="<%= @total %>" aria-valuemin="0" aria-valuemax="250"></div>
+    </div>
+<% elsif @user.reward.id == 3%>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: <%= @total/5 %>%" aria-valuenow="<%= @total %>" aria-valuemin="0" aria-valuemax="500"></div>
+    </div>
+<% end %>
+
+
 <%= link_to '<button type="button">Your Rewards</button>'.html_safe, user_reward_path(@user_reward.id) %>
 <br>
 
