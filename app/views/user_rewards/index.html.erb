@@ -1,22 +1,64 @@
-<h1>Bronze donators</h1>
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Level</th>
+        <th scope="col">Donation amount</th>
+        <th scope="col">reward</th>
+        <th scope="col">Number of Donors</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Bronze</td>
+            <td>Less than $100</td>
+            <td>None</td>
+            <td><%= @bronze_users.count %></td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Silver</td>
+            <td>Between $250 and $500</td>
+            <td>$5 gift card</td>
+            <td><%= @silver_users.count %></td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Gold</td>
+            <td>Between $250 and $500</td>
+            <td>$20 gift card</td>
+            <td><%= @gold_users.count %></td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Platinum</td>
+            <td>More than $500</td>
+            <td>$50 gift card</td>
+            <td><%= @platinum_users.count %></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Bronze Donors</h2>
 <% @bronze_users.each do | bronze_user|%>
 <%= bronze_user.name %>
 <br>
 <% end %>
 <br>
-<h1>Silver donators</h1>
+<h2>Silver Donors</h2>
 <% @silver_users.each do | silver_user|%>
 <%= silver_user.name %>
 <br>
 <% end %>
 <br>
-<h1>Gold donators</h1>
+<h2>Gold Donors</h2>
 <% @gold_users.each do | gold_user|%>
 <%= gold_user.name %>
 <br>
 <% end %>
 <br>
-<h1>Platinum donators</h1>
+<h2>Platinum Donors</h2>
 <% @platinum_users.each do | platinum_user|%>
 <%= platinum_user.name %>
 <br>
