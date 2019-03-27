@@ -1,4 +1,12 @@
 <h1>Your Rewards</h1>
 
-<h3><%= @reward %></h3>
-<%= button_to " Use Reward", new_donation_path, class: "btn btn-primary btn-sm" %>
+<% if @user_reward.used == true || @gift_card == "None yet!"%>
+<h3>No rewards right now</h3>
+<% else %>
+<h3><%= @gift_card %></h3>
+<% end %>
+
+<%= form_for @user_reward, method: :patch do |f| %>
+  <%= f.hidden_field :used, value: true %>
+  <%= f.submit 'Use Reward', class: "btn btn-info btn-sm" %>
+<% end %>
