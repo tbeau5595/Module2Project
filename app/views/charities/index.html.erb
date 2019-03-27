@@ -1,4 +1,4 @@
-<%= class="p-3 mb-2 bg-primary All Charity-white">.bg-primary %>
+<h1> All Charity</h1>
 <% @charities.each do |charity|%>
 <%= link_to charity.name, charity_path(charity)%>
 <%= link_to " Like", new_donation_path, class: "btn btn-primary btn-sm" %><br>
