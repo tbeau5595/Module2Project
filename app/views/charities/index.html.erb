@@ -1,8 +1,10 @@
+
 <h1> All Charity</h1>
-<ul>
+
 <% @charities.each do |charity|%><br>
 <%= link_to charity.name, charity_path(charity)%><br>
-<%= link_to '<button type="button">Like</button>'.html_safe, new_donation_path %><br>
+<%= link_to " Like", new_donation_path, class: "btn btn-primary btn-sm" %><br><br>
+<%= link_to "Read More", new_donation_path, class: "btn btn-danger btn-sm"%><br><br>
 
 <%end%>
-<ul>
+</ul><ul>
