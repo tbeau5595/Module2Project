@@ -33,10 +33,12 @@ class UserRewardsController < ApplicationController
     end
 
     def update
-
+        @user_reward = UserReward.find(params[:id])
+        @user_reward.update(user_reward_params)
+        redirect_to user_reward_path(@user_reward.id)
     end
 
     def user_reward_params
-        params.require(:user_reward).permit(:user_id, :reward_id)
+        params.require(:user_reward).permit(:user_id, :reward_id, :used)
     end
 end
