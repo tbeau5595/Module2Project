@@ -3572,3 +3572,1587 @@ Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
 NoMethodError (undefined method `authenticate' for nil:NilClass):
   
 app/controllers/sessions_controller.rb:9:in `create'
+Started GET "/sessions/new" for ::1 at 2019-03-28 11:15:05 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (22.7ms)
+Completed 200 OK in 421ms (Views: 408.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-28 11:15:28 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:2
+  Rendered charities/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 453ms (Views: 419.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:15:39 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:3
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:6
+  Rendered donations/new.html.erb within layouts/application (554.0ms)
+Completed 200 OK in 654ms (Views: 608.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:22:17 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:5
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:8
+  Rendered donations/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 62ms (Views: 55.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:22:48 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:5
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:8
+  Rendered donations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 65ms (Views: 58.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:23:40 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (308.6ms)
+Completed 500 Internal Server Error in 325ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb57ffa7260>:0x007fb580e37640>
+Did you mean?  charity_url):
+    1: <%"Hello welcome #{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208781525000'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:23:48 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (302.9ms)
+Completed 500 Internal Server Error in 320ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb57ffa7260>:0x007fb586b2a910>
+Did you mean?  charity_url):
+    1: <%="Hello welcome #{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208812833140'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:25:31 -0500
+Processing by DonationsController#new as HTML
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `charity' for #<DonationsController:0x007fb5861a7ca8>
+Did you mean?  charity_url):
+  
+app/controllers/donations_controller.rb:12:in `new'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:26:14 -0500
+Processing by DonationsController#new as HTML
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 1.1ms)
+
+
+  
+NameError (undefined local variable or method `charity' for #<DonationsController:0x007fb58430bee8>
+Did you mean?  charity_url):
+  
+app/controllers/donations_controller.rb:12:in `new'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:26:39 -0500
+  
+SyntaxError (/Users/flatironschool/practice/final_project/Module2Project/app/controllers/donations_controller.rb:11: syntax error, unexpected tSTRING_BEG, expecting '('
+        @donation = Donation.new."#{charity.name}"
+                                  ^):
+  
+app/controllers/donations_controller.rb:11: syntax error, unexpected tSTRING_BEG, expecting '('
+Started GET "/donations/new" for ::1 at 2019-03-28 11:27:34 -0500
+Processing by DonationsController#new as HTML
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.7ms)
+
+
+  
+NameError (undefined local variable or method `charity' for #<DonationsController:0x007fb5861e00a8>
+Did you mean?  charity_url):
+  
+app/controllers/donations_controller.rb:12:in `new'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:27:56 -0500
+Processing by DonationsController#new as HTML
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 1.1ms)
+
+
+  
+NameError (undefined local variable or method `charity' for #<DonationsController:0x007fb586d25580>
+Did you mean?  charity_url):
+  
+app/controllers/donations_controller.rb:12:in `new'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:29:12 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (317.3ms)
+Completed 500 Internal Server Error in 348ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb584755a80>:0x007fb586c3bf70>
+Did you mean?  charity_url):
+    1: <%= "Hello welcome #{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208794046860'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:29:33 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (337.4ms)
+Completed 500 Internal Server Error in 361ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb584755a80>:0x007fb58903d978>
+Did you mean?  charity_url):
+    1: <%"Hello welcome #{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208832270760'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:29:52 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (338.7ms)
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb584755a80>:0x007fb5868d4cd8>
+Did you mean?  charity_url):
+    1: <% "#{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208811608940'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:30:25 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (274.1ms)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb584755a80>:0x007fb5871286f0>
+Did you mean?  charity_url):
+    1: <% " Hello #{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208815974500'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:31:02 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:5
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:8
+  Rendered donations/new.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 103ms (Views: 96.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:31:45 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (305.6ms)
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb584755a80>:0x007fb5864450f0>
+Did you mean?  charity_url):
+    1:  <%" Hello #{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208809217600'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:33:38 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (325.3ms)
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb584755a80>:0x007fb586ba15b0>
+Did you mean?  charity_url):
+    1:  <%"charity= #{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208813076560'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:40:08 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (315.5ms)
+Completed 500 Internal Server Error in 348ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charity' for #<#<Class:0x007fb586aa8460>:0x007fb58647e918>
+Did you mean?  charity_url):
+    1:  <%"hello,#{charity.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208812566140'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:40:18 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (322.3ms)
+Completed 500 Internal Server Error in 341ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charities' for #<#<Class:0x007fb586aa8460>:0x007fb586282380>
+Did you mean?  charities_url):
+    1:  <%"hello,#{charities.name}"%>
+    2: 
+    3: <%= form_with model: @donation do |f|%>
+    4:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:1:in `_app_views_donations_new_html_erb__4374973167681946236_70208808294060'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:41:53 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  Rendered donations/new.html.erb within layouts/application (318.6ms)
+Completed 500 Internal Server Error in 330ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charities' for #<#<Class:0x007fb586aa8460>:0x007fb586bf69e8>
+Did you mean?  charities_url):
+    1:  @name = charity
+    2:  <%"hello,#{charities.name}"%>
+    3: 
+    4: <%= form_with model: @donation do |f|%>
+    5:     <%= f.label :user %>
+  
+app/views/donations/new.html.erb:2:in `_app_views_donations_new_html_erb__4374973167681946236_70208813251420'
+Started GET "/donations/new" for ::1 at 2019-03-28 11:42:54 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:4
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:7
+  Rendered donations/new.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 78ms (Views: 62.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/donations" for ::1 at 2019-03-28 11:43:06 -0500
+Processing by DonationsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MZNcXkKtdYIqTqQEdMU/kA5on1mXkM2hNTWfcWxjs2ladia8+Rrs43FG2T2HTqj9nzH+zOkx+oZJainS85oE4w==", "donation"=>{"user_id"=>"1", "charity_id"=>"2", "amount"=>"25"}, "commit"=>"Donate!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT  "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[36mDonation Create (2.2ms)[0m  [1m[32mINSERT INTO "donations" ("user_id", "charity_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["charity_id", 2], ["amount", 25], ["created_at", "2019-03-28 16:43:06.264905"], ["updated_at", "2019-03-28 16:43:06.264905"]]
+  ↳ app/controllers/donations_controller.rb:20
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:20
+Redirected to http://localhost:3000/users
+Completed 200 OK in 31ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 11:43:06 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-28 11:43:07 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:2
+  Rendered charities/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 55ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-28 11:43:27 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:2
+  Rendered charities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 94ms (Views: 88.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:45:31 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:4
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:7
+  Rendered donations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 109ms (Views: 100.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:45:31 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:4
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:7
+  Rendered donations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/donations/new" for ::1 at 2019-03-28 11:45:33 -0500
+Processing by DonationsController#new as HTML
+  Rendering donations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/donations/new.html.erb:4
+  [1m[36mCharity Load (0.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/donations/new.html.erb:7
+  Rendered donations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 17:52:47 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (7.1ms)
+Completed 200 OK in 39ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charities" for ::1 at 2019-03-28 17:52:55 -0500
+Processing by CharitiesController#index as HTML
+  Rendering charities/index.html.erb within layouts/application
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/views/charities/index.html.erb:2
+  Rendered charities/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 366ms (Views: 344.6ms | ActiveRecord: 2.1ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (4.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 21]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 22]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 23]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 24]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 25]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDonation Load (0.8ms)[0m  [1m[34mSELECT "donations".* FROM "donations"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.8ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 21]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 22]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 23]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 24]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 25]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 26]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 27]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 28]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 29]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 30]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 31]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 32]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 33]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 34]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 35]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 36]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 37]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 38]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 39]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 40]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 41]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 42]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 43]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 44]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 45]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 46]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 47]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 48]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 49]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 50]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 51]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 52]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 53]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 54]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 55]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 56]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 57]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 58]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 59]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 60]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 61]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 62]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 63]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 64]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 65]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 66]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 67]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 68]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 69]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 70]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 71]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 72]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 73]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 74]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 75]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 76]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 77]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 78]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 79]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 80]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 81]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 82]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 83]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 84]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 85]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 86]]
+  ↳ db/seeds.rb:10
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 87]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 88]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 89]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 90]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 91]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 92]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 93]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 94]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 95]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 96]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 97]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 98]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 99]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 100]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 101]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 102]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 103]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDonation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "donations" WHERE "donations"."id" = ?[0m  [["id", 104]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "charities" WHERE "charities"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mReward Load (0.3ms)[0m  [1m[34mSELECT "rewards".* FROM "rewards"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReward Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rewards" WHERE "rewards"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUserReward Load (0.3ms)[0m  [1m[34mSELECT "user_rewards".* FROM "user_rewards"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.6ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 21]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 22]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 23]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 24]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUserReward Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_rewards" WHERE "user_rewards"."id" = ?[0m  [["id", 25]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fay, Ward and Abernathy"], ["description", "Graphic Design"], ["created_at", "2019-03-28 22:54:41.411239"], ["updated_at", "2019-03-28 22:54:41.411239"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pouros-Zieme"], ["description", "Wireless"], ["created_at", "2019-03-28 22:54:41.415600"], ["updated_at", "2019-03-28 22:54:41.415600"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Oberbrunner-Hudson"], ["description", "Public Relations and Communications"], ["created_at", "2019-03-28 22:54:41.419615"], ["updated_at", "2019-03-28 22:54:41.419615"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Toy-Bins"], ["description", "Computer Networking"], ["created_at", "2019-03-28 22:54:41.423867"], ["updated_at", "2019-03-28 22:54:41.423867"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dooley-Streich"], ["description", "Electrical / Electronic Manufacturing"], ["created_at", "2019-03-28 22:54:41.428455"], ["updated_at", "2019-03-28 22:54:41.428455"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Larson Group"], ["description", "Semiconductors"], ["created_at", "2019-03-28 22:54:41.433910"], ["updated_at", "2019-03-28 22:54:41.433910"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wehner LLC"], ["description", "Civil Engineering"], ["created_at", "2019-03-28 22:54:41.438443"], ["updated_at", "2019-03-28 22:54:41.438443"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Langworth-Lindgren"], ["description", "Aviation & Aerospace"], ["created_at", "2019-03-28 22:54:41.442568"], ["updated_at", "2019-03-28 22:54:41.442568"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fadel-Walker"], ["description", "Events Services"], ["created_at", "2019-03-28 22:54:41.447167"], ["updated_at", "2019-03-28 22:54:41.447167"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO "charities" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Labadie, Stehr and Windler"], ["description", "Program Development"], ["created_at", "2019-03-28 22:54:41.451721"], ["updated_at", "2019-03-28 22:54:41.451721"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:32
