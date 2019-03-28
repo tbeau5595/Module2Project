@@ -3,6 +3,7 @@
     <h3>Congratulations! You are a Platinum level donor!</h3>
 <% else %>
     <h3><%= "You are #{@user.reward.level} level!" %></h3>
+    <%= link_to '<button type="button">Your Rewards</button>'.html_safe, user_reward_path(@user_reward.id) %>
 <% end %>
 <% if @user.reward.id == 1%>
     <div class="progress" style="height: 35px;">
@@ -18,10 +19,8 @@
     </div>
 <% end %>
 
-
-<%= link_to '<button type="button">Your Rewards</button>'.html_safe, user_reward_path(@user_reward.id) %>
 <br>
-
+<h3>Your Donations</h3>
 <% @user.donations.each do |donation|%>
 <%= "#{donation.charity.name} " "$#{donation.amount}"%><br>
 <% end %>

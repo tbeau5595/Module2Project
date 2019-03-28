@@ -1,13 +1,12 @@
 <h1>Your Rewards</h1>
 
 <% if @user_reward.used == true || @gift_card == "None yet!"%>
-<h3>No rewards right now</h3>
+  <h3>No rewards right now!</h3>
 <% else %>
-<h3><%= @gift_card %></h3>
-<% end %>
-
-<%= form_for @user_reward, method: :patch do |f| %>
-  <%= f.hidden_field :used, value: true %>
-  <%= f.submit 'Use Reward', class: "btn btn-info btn-sm" %>
+  <h3><%= @gift_card %></h3>
+  <%= form_for @user_reward, method: :patch do |f| %>
+    <%= f.hidden_field :used, value: true %>
+    <%= f.submit 'Use Reward', class: "btn btn-info btn-sm" %>
+  <% end %>
 <% end %>
 
