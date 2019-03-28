@@ -1,0 +1,10 @@
+<%= form_with( url:'/sessions', method: :post) do | f| %>
+<div class="form-group">
+  <%= f.email_field :email %>
+  <%= f.password_field :password %>
+  <%= f.check_box :remember_me %>
+  <%= f.submit "Log In" %>
+  </div>
+<% end %>
+
+   
