@@ -1,0 +1,9 @@
+<div class="container">
+<%= bootstrap_form_with model: @charity do |f|%>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.text_area :description %>
+    <br>
+    <%= f.submit "Create Charity!"%> 
+<% end %>
+</div>

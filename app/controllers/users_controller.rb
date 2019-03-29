@@ -31,12 +31,11 @@ class UsersController < ApplicationController
             @user.save
             redirect_to user_path(@user.id)
         else
-            redirect_to "/users/new"
+            redirect_to new_user_path
         end
-        # redirect_to user_path(@user.id)
     end
 
     def user_params
-        params.require(:user).permit(:name, :account_number, :ammount_donated)
+        params.require(:user).permit(:name, :account_number)
     end
 end
