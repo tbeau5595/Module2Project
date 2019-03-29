@@ -21,6 +21,7 @@
 
 <br>
 <h3>Your Donations</h3>
+<%= link_to "Donate!", new_donation_path, class: "btn btn-primary btn-sm" %><br><br>
 <% @user.donations.each do |donation|%>
 <%= "#{donation.charity.name} " "$#{donation.amount}"%><br>
 <% end %>
