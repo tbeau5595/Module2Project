@@ -1,14 +1,11 @@
 class UsersController < ApplicationController
 
-    
-    def index
-        
-
-    end
-
     def show
         @user = User.find(params[:id])
         @user_reward = UserReward.find_by(user_id: @user.id)
+        if @user_reward == nil
+            @user_reward = UserReward.create(user_id: @user.id, reward_id: 1)
+        end
         @total = 0
         @user.donations.each do |donation|
             @total += donation.amount            
@@ -25,19 +22,18 @@ class UsersController < ApplicationController
     end
 
     def new
-
-    end
-
-    def edit
-
+        @user = User.new
     end
 
     def create
-
-    end
-
-    def update
-
+        @user = User.new(user_params)
+        if @user.valid?
+            @user.save
+            redirect_to user_path(@user.id)
+        else
+            redirect_to "/users/new"
+        end
+        # redirect_to user_path(@user.id)
     end
 
     def user_params

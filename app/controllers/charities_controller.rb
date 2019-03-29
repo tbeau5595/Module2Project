@@ -1,8 +1,7 @@
 class CharitiesController < ApplicationController
     def index
         @charities = Charity.all
- 
-    end
+  end
 
     def show
         @charity = Charity.find(params[:id])

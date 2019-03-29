@@ -20,18 +20,6 @@ class UserRewardsController < ApplicationController
         @gift_card = @user_reward.reward.gift_card
     end
 
-    def new
-
-    end
-
-    def edit
-
-    end
-
-    def create
-
-    end
-
     def update
         @user_reward = UserReward.find(params[:id])
         @user_reward.update(user_reward_params)

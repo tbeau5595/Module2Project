@@ -1,0 +1,9 @@
+<div class="container">
+<%= bootstrap_form_with model: @user do |f|%>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.number_field :account_number %>
+    <br>
+    <%= f.submit "Create User!"%> 
+<% end %>
+</div>

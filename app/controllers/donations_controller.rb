@@ -1,15 +1,15 @@
 class DonationsController < ApplicationController
     def index
+        #finds largest donation
         @donation_amounts = Donation.all.map do |donation|
             donation.amount
         end
         @largest_donation_amount = @donation_amounts.max
-        
         @largest_donation = Donation.find_by(amount: @largest_donation_amount)
         @user_with_largest_donation = User.find(@largest_donation.user_id)
         
-        @charities = Charity.all
-        
+        #finds most donated to charity
+        @charities = Charity.all      
         @charities_donations = Donation.all.map do |donation|
             donation.charity_id
         end
@@ -17,6 +17,7 @@ class DonationsController < ApplicationController
         @most_donated_to = @donations_for_each_charity.values.max
         @most_donated_to_charity = Charity.find(@donations_for_each_charity.key(@most_donated_to))
 
+        #find user with most donations
         @users_donations = Donation.all.map do |donation|
             donation.user_id
         end      
@@ -35,19 +36,14 @@ class DonationsController < ApplicationController
         @charities = Charity.all
     end
 
-    def edit
-
-    end
-
     def create
         @donation = Donation.new(donation_params)
-        @donation.save
-        
-        redirect_to users_path
-    end
-
-    def update
-
+        if @donation.valid?
+            @donation.save
+            redirect_to users_path
+        else
+            redirect_to new_donation_path
+        end
     end
 
     def donation_params

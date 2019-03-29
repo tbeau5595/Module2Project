@@ -1,3 +1,26 @@
+
+<style>
+      #video-background {
+           position: fixed;
+           right: 0;
+           bottom: 0;
+           min-width: 100%;
+           min-height: 100%;
+           width: auto;
+           height: auto;
+           z-index: -100;
+      }
+      
+</style>
+div{
+    color: yellow;
+    font-style: italic;
+}
+
+  <video autoplay loop id="video-background" muted plays-inline>
+   <source src="https://ak8.picdn.net/shutterstock/videos/1008333868/preview/stock-footage-donate-keyboard-key-animation.webm" type="video/mp4">
+  </video>
+
 <div class="container">
 <%= bootstrap_form_with model: @donation do |f|%>
     <%= f.collection_select(:user_id, User.all, :id, :name)%>

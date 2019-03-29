@@ -1,8 +1,40 @@
+<style>
+      #video-background {
+           position: fixed;
+           right: 0;
+           bottom: 0;
+           min-width: 100%;
+           min-height: 100%;
+           width: auto;
+           height: auto;
+           z-index: -100;
+      }
 
+
+div{
+    color: blue;
+    font-style: italic;
+}
+      
+</style>
+
+
+  <video autoplay loop id="video-background" muted plays-inline>
+   <source src="https://ak5.picdn.net/shutterstock/videos/28053145/preview/stock-footage-uganda-circa-may-volunteer-helps-children-with-an-art-project-at-an-orphanage-in-uganda.webm" type="video/mp4">
+  </video>
+
+<div style="text-align: center"/>
 <h1> All Charities</h1>
 
 <% @charities.each do |charity|%><br>
 <h3><%= charity.name%><h3>
 <%= link_to " Like", new_donation_path, class: "btn btn-primary btn-sm" %><br><br>
-<%= link_to "Read More", charity_path(charity), class: "btn btn-danger btn-sm"%><br><br>
+<%= link_to "Read More", charity_path(charity), class: "btn btn-danger btn-bg"%><br><br>
 <%end%>
+</div>
+
+<!-<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "name:") %>
+  <%= text_field_tag(:search) %>
+  <%= submit_tag("Search") %>
+<% end %>

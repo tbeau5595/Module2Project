@@ -1,16 +1,9 @@
-
-   
-    body {
-        background: #8dd85e52;
-    }
-    .logo {
-        text-indent: -999999px;
-        background: url("IMG_6346.jpg") repeat;
-    background-size: round($number: 10000)
+.logo {
+  text-indent: -999999px;
+  background: url("IMG_6346.jpg") repeat;
+  background-size: round($number: 10000);
 }
 body {
-    background: url("IMG_6346.jpg") repeat;
-    background-size: cover
-    }
-
-       
+  background: url("IMG_6346.jpg") repeat;
+  background-size: cover;
+}

@@ -1,6 +1,26 @@
+<style>
+    div {
+    color: white;
+    font-style: italic;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;         s
+    }
+</style>
+
+
+
+<div style="text-align: center;">
 <h1><%=@charity.name%></h1>
 <h3><%=@charity.description%></h3>
 <%= link_to "Click To Donate!", new_donation_path, class: "btn btn-primary btn-sm" %><br>
 </div>
+
+
+
 
 
