@@ -3,7 +3,8 @@ class CreateUserRewards < ActiveRecord::Migration[5.2]
     create_table :user_rewards do |t|
       t.belongs_to :user
       t.belongs_to :reward
-
+      t.boolean :used, default: false
+      
       t.timestamps
     end
   end

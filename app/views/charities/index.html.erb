@@ -1,8 +1,8 @@
-<h1> All Charity</h1>
-<% @charities.each do |charity|%>
-<%= link_to charity.name, charity_path(charity)%>
-<%= link_to " Like", new_donation_path, class: "btn btn-primary btn-sm" %><br>
-<%= link_to "Read More", new_donation_path, class: "btn btn-danger btn-sm"%><br><br>
 
+<h1> All Charities</h1>
+
+<% @charities.each do |charity|%><br>
+<h3><%= charity.name%><h3>
+<%= link_to " Like", new_donation_path, class: "btn btn-primary btn-sm" %><br><br>
+<%= link_to "Read More", charity_path(charity), class: "btn btn-danger btn-sm"%><br><br>
 <%end%>
-</ul>

@@ -31,14 +31,14 @@ end
     Donation.create(
     user_id: User.all.sample.id,
     charity_id: Charity.all.sample.id,
-    amount: Faker::Number.within(1..100),      
+    amount: Faker::Number.within(30..100),      
     )
 end
 
-Reward.create(level: "Bronze")
-Reward.create(level: "Silver")
-Reward.create(level: "Gold")
-Reward.create(level: "Platinum")
+Reward.create(level: "Bronze", gift_card: "None yet!")
+Reward.create(level: "Silver", gift_card: "$5 Gift Card")
+Reward.create(level: "Gold", gift_card: "$20 Gift Card")
+Reward.create(level: "Platinum", gift_card: "$50 Gift Card")
 
 def create_user_reward
     User.all.each do |user|
@@ -47,4 +47,4 @@ def create_user_reward
 end
 
 create_user_reward
-puts "Hello"
+puts "Seeded!"

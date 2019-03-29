@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_03_28_133731) do
 
   create_table "rewards", force: :cascade do |t|
     t.text "level"
+    t.text "gift_card"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_03_28_133731) do
   create_table "user_rewards", force: :cascade do |t|
     t.integer "user_id"
     t.integer "reward_id"
+    t.boolean "used", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["reward_id"], name: "index_user_rewards_on_reward_id"

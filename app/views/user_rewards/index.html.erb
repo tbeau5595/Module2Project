@@ -1,5 +1,5 @@
-<table class="table">
-    <thead>
+<table class="table table-striped table-hover table-info ">
+    <thead class="thead-dark">
         <tr>
         <th scope="col">#</th>
         <th scope="col">Level</th>
@@ -39,6 +39,31 @@
         </tr>
     </tbody>
 </table>
+
+<h2>Bronze Donors</h2>
+<% @bronze_users.each do | bronze_user|%>
+<%= bronze_user.name %>
+<br>
+<% end %>
+<br>
+<h2>Silver Donors</h2>
+<% @silver_users.each do | silver_user|%>
+<%= silver_user.name %>
+<br>
+<% end %>
+<br>
+<h2>Gold Donors</h2>
+<% @gold_users.each do | gold_user|%>
+<%= gold_user.name %>
+<br>
+<% end %>
+<br>
+<h2>Platinum Donors</h2>
+<% @platinum_users.each do | platinum_user|%>
+<%= platinum_user.name %>
+<br>
+<% end %>
+<br>
 
 <h2>Bronze Donors</h2>
 <% @bronze_users.each do | bronze_user|%>
