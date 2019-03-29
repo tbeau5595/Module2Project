@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 
 <%= form_with model: @donation do |f|%>
     <%= f.label :user %>
+=======
+<div class="container">
+<%= bootstrap_form_with model: @donation do |f|%>
+>>>>>>> cedf4eead4809b12977f3517cf42763c994617aa
     <%= f.collection_select(:user_id, User.all, :id, :name)%>
     <br>
-    <%= f.label :charity %>
     <%= f.collection_select(:charity_id, Charity.all, :id, :name)%>
     <br>
-    <%= f.label :amount %>
+
     <%= f.number_field :amount %>
     <br>
     <%= f.submit "Donate!"%> 
 <% end %>
+</div>

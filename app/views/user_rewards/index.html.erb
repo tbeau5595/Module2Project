@@ -39,6 +39,32 @@
         </tr>
     </tbody>
 </table>
+<center>
+<h2>Bronze Donors</h2>
+<% @bronze_users.each do | bronze_user|%>
+<%= bronze_user.name %>
+<br>
+<% end %>
+<br>
+<h2>Silver Donors</h2>
+<% @silver_users.each do | silver_user|%>
+<%= silver_user.name %>
+<br>
+<% end %>
+<br>
+<h2>Gold Donors</h2>
+<% @gold_users.each do | gold_user|%>
+<%= gold_user.name %>
+<br>
+<% end %>
+<br>
+<h2>Platinum Donors</h2>
+<% @platinum_users.each do | platinum_user|%>
+<%= platinum_user.name %>
+<br>
+<% end %>
+<br>
+<<<<<<< HEAD
 
 <h2>Bronze Donors</h2>
 <% @bronze_users.each do | bronze_user|%>
@@ -64,28 +90,6 @@
 <br>
 <% end %>
 <br>
-
-<h2>Bronze Donors</h2>
-<% @bronze_users.each do | bronze_user|%>
-<%= bronze_user.name %>
-<br>
-<% end %>
-<br>
-<h2>Silver Donors</h2>
-<% @silver_users.each do | silver_user|%>
-<%= silver_user.name %>
-<br>
-<% end %>
-<br>
-<h2>Gold Donors</h2>
-<% @gold_users.each do | gold_user|%>
-<%= gold_user.name %>
-<br>
-<% end %>
-<br>
-<h2>Platinum Donors</h2>
-<% @platinum_users.each do | platinum_user|%>
-<%= platinum_user.name %>
-<br>
-<% end %>
-<br>
+=======
+</center>
+>>>>>>> cedf4eead4809b12977f3517cf42763c994617aa
